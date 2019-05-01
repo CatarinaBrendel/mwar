@@ -9,22 +9,26 @@
     <title>Welcome</title>
 </head>
 <body>
-    <nav>
-        <img id="logo" src="img/bear.svg">
-        <form class="login-menu">
+    <nav class="nav-container">
+        <!-- <img id="logo" src="img/bear.svg" width="50px" height="50px"> -->
+        <p>LOGO</p>
+        <form class="login">
             <input type="email" placeholder="email@email.com" required>
             <input type="password" placeholder="password" minlength="8" required>
             <button type="submit">Log Me In</button>
         </form>
     </nav>
-    <main>
-        <form class="signup">
-            <input type="text" placeholder="Name" required>
-            <input type="text" placeholder="Surname" required>
-            <input type="email" placeholder="email@email.com" required>
-            <input type="password" placeholder="password" minlength="8" required>
-            <button type="submit">Sign Me In</button>
-        </form>
+    <main class="main-container">
+        <div class="background"></div>
+        <div class="signup-box">
+            <form class="signup">
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Surname" required>
+                <input type="email" placeholder="email@email.com" required>
+                <input type="password" placeholder="password" minlength="8" required>
+                <button type="submit">Sign Me In</button>
+            </form>
+        </div>
     </main>
 
     <footer class="main-foot">

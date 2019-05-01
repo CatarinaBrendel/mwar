@@ -4,11 +4,10 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    max-width: 1440px;
 }
 
 body{
+    background-color: #f0f0f0;
     color: #222;
     font-family: 'Roboto', 'sans-serif';
     font-size: 16px;
@@ -19,93 +18,153 @@ main{
     background-color: #f0f0f0;
 }
 
-#logo {
-    width: 50px;
-    align-self: center;
-    padding: 1em 0;
-}
-
-.login-menu button,
+.login button,
 .signup button{
     background-color: #8d5b4c;
     color: #f0f0f0;
 }
 
-.login-menu input,
-.login-menu button{
-    margin: 0.5em 0;
-    padding: 0.6em 0;
+nav{
+    background-color :#fff;
 }
 
 .signup{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 80%;
-    margin: 3.5em auto;
-    padding: 2em 0.4em;;
     border: 2px solid #c4bbaf;
     border-radius: 10px;
     background-color: #c4bbaf;
 }
 
+.main-foot{
+    font-size: 0.8em;
+    background-color: #fff;
+}
+
+/* -------- Basic Layout --------*/
+
+nav{
+    padding: 1em 2em;
+}
+.main-container{
+    margin: 2.5em;
+}
+main > div{
+    width: 90%;
+}
+
+.background{
+    background-image: url('img/Bear.jpg');
+    background-size: 130%;
+    background-position: center  top;
+    margin-right: .5em;
+}
+
+.signup-box{
+    margin: 0 auto;
+}
+.signup{
+    margin: 0 auto;
+    padding: .5em;
+}
+.login input,
+.login button{
+    margin: .3em 0;
+    padding: .3em 0;
+}
 .signup input,
 .signup button{
-    padding: 1em 0;
-    margin: 1em;
+    margin: .5em 0;
+    padding: .5em 0;
 }
 
 .main-foot{
     text-align: center;
-    font-size: 0.8em;
-    background-color: #fff;
-    padding: 2em 0;
-}
-
-/* -------- Basic Layout --------*/
-nav{
-    background-color :#fff;
-    width: 100%;
-    padding: 1em 0;
-}
-
-.signup button{
-    font-size: .9em;
+    height: calc (100vh - 50px);
 }
 
 /* -------- Flexboxes --------*/
-nav,
-main,
-.main-foot{
+.nav-container,
+.login{
     display: flex;
-    flex-direction: column;
+    align-content: space-between;
 }
 
-.login-menu{
+.nav-container p{
+    flex: 1 50%;
+}
+
+.main-container,
+.signup{
     display: flex;
+}
+
+.signup{
     flex-direction: column;
-    align-self: center;
-    width: 40%;
 }
 
 /* -------- Media Queries --------*/
-@media (min-width: 769px){
+@media (max-width: 600px){
+    .nav-container,
+    .login,
+    .main-container{
+        flex-direction: column;
+    }
+
+    .nav-container p{
+        text-align: center;
+    }
+
+    .login{
+        align-self: center;
+        width: 40%;
+    }
+
+    .signup{
+        width: 80%;
+    }
+
+    .background{
+        display: none;
+    }
+
     nav{
-       display: flex;
-       flex-direction: row;
-       align-content: space-between;
+        padding: 1em 2em;
+    }
+    .main-container{
+        margin: 2.5em;
+    }
+    main > div{
+        width: 90%;
     }
     
-    .login-menu{
-        display: flex;
-       
+    .background{
+        background-image: url('img/Bear.jpg');
+        background-size: 130%;
+        background-position: center  top;
+        margin-right: .5em;
     }
-
-    #logo {
-        width: 150px;
-        padding: 1em 2em;
-        margin: 2em;
+    
+    .signup-box{
+        margin: 0 auto;
     }
+    .signup{
+        margin: 0 auto;
+        padding: .5em;
+    }
+    .login input,
+    .login button{
+        margin: .3em 0;
+        padding: .3em 0;
+    }
+    .signup input,
+    .signup button{
+        margin: .5em 0;
+        padding: .5em 0;
+    }
+    
+    .main-foot{
+        text-align: center;
+        height: calc (100vh - 50px);
+    }
+  
 }
-
 
