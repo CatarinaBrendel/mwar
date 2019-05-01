@@ -34,6 +34,12 @@ main{
     color: #f0f0f0;
 }
 
+.login button a,
+.signup button a{
+    text-decoration: none;
+    color: #fff;
+}
+
 header{
     background-color :#fff;
 }
@@ -60,7 +66,7 @@ nav{
     width: 80%;
 }
 .main-container{
-    margin: 2.5em;
+    margin: 2em;
 }
 
 .background{
@@ -105,7 +111,7 @@ main{
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 /* -------- Flexboxes --------*/
@@ -160,7 +166,7 @@ main{
     }
     
     .main-container{
-        margin: 5em 0;
+        margin: 1.5em 0;
     }
 
     .signup{
@@ -171,7 +177,7 @@ main{
     .login input,
     .login button{
         margin: .3em 0;
-        padding: .3em 0;
+        padding: .3em .5em;
     }
 
     .login button{
@@ -181,6 +187,6 @@ main{
     .signup input,
     .signup button{
         margin: 1em;
-        padding: .5em 0;
+        padding: .5em .9em;
     }
 }
