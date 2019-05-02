@@ -1,0 +1,72 @@
+/* ------ Basic Style ------ */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f0f0f0;
+    max-width: 1440px;
+}
+
+header{
+    background-color: #fff;
+}
+
+.search button{
+    background-color: #8d5b4c;
+    color: #f0f0f0;
+    padding: 0 1em;
+}
+
+.search input,
+.search button{
+    margin: 0 1em;
+}
+
+#user-logo{
+    border: 2px solid #c4bbaf;
+    border-radius: 50%;
+    margin: 0 2em;
+}
+
+#side-menu{
+    display: none;
+    list-style-type: none;
+    background-color: #5a2a27;
+    width: 200px;
+    padding: 1em 3em;
+}
+
+#side-menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ----- Basic Layout -----*/
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+
+/* ------ Flexbox Styles ------ */
+
+.container{
+    display: flex;
+    align-content: space-between;
+}
+
+.logo{
+    flex: 1;
+}
+
+.search{
+    align-self: center;
+    margin: 0 1em;
+}
+
