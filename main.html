@@ -2,40 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<nav>
-        >, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <title>Mwar</title>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <img  src="img/bear.svg" width="50px" height="50px">
-            </div>
-            <div class="search">
-                <form>
-                    <input type="search">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
-            <div>
-                <img id="user-logo" src="img/spiderman.svg" width="50px" height="50px">
-            </div>
-            <div id="side-menu">
-                <div id="side-menu-content">
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Lists</a></li>
-                    <li><a href="#">Bookmarks</a></li>
-                    <li><a href="#">Settings</a></li>
+    <div class="wrapper">
+        <header>
+            <nav class="container">
+                <div class="logo">
+                    <img  src="img/bear.svg" width="50px" height="50px">
+                </div>
+                <div class="search">
+                    <form method="POST">
+                        <input type="search">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div>
+                    <img id="user-logo" src="img/spiderman.svg" width="50px" height="50px">
+                </div>
+                <!-- <div id="side-menu">
+                    <div id="side-menu-content">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Lists</a></li>
+                        <li><a href="#">Bookmarks</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </div>
+                </div> -->
+            </nav>
+        </header>
+        <main>
+            <div class="main-container">
+                <aside class="user-tag">
+                    <img id="user-logo" src="img/spiderman.svg" width="90px" height="90px">
+                    <p>Following</p>
+                    <p>Followers</p>
+                    <p>Posts</p>
+                </aside>
+                <div class="user-messages">
+                    <form method="POST">
+                        <input type="text" maxlength="150">
+                        <button type="submit">Submit</button>
+                    </form>
+                    <ul class="message-card">
+                        <h3>What you've been saying...</h3>
+                        <li >sample</li>
+                    </ul>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main>
-
-    </main>
+        </main>
+    </div>
     <footer class="main-foot">
         <p>&copy2019 Mwar Social Media</p>
     </footer>
