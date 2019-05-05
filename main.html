@@ -42,13 +42,13 @@
                     <p>Posts</p>
                 </aside>
                 <div class="user-messages">
-                    <form method="POST">
-                        <input type="text" maxlength="150">
-                        <button type="submit">Submit</button>
+                    <form id="register" method="POST">
+                        <p id="char-left"></p>
+                        <textarea class="message-box" rows=3 cols="45"></textarea>
+                        <button id="submit-input"type="submit">Submit</button>
                     </form>
-                    <ul class="message-card">
-                        <h3>What you've been saying...</h3>
-                        <li >sample</li>
+                    <h3>What you've been saying...</h3>
+                    <ul id="message-card">
                     </ul>
                 </div>
             </div>

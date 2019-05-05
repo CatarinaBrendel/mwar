@@ -47,12 +47,13 @@ header{
     border-radius: 5px;
 }
 
-.user-messages input{
+.message-box{
    border-radius: 5px;
    font-size: 1em;
+   border: 1px solid #fff;
 }
 
-.message-card li{
+#message-card li{
     background-color: #fff;
     border-radius: 10px;
     list-style: none;
@@ -88,16 +89,20 @@ main{
     border-radius: 50px;
 }
 
-.user-tag,
-.user-messages{
+.user-tag{
     margin: .5em 0;
     padding: 1em;
     text-align: center;
 }
 
-.user-messages input{
-    width: 80%;
-    padding: 1em;
+.user-messages form{
+    margin: 0 1em;
+    padding: .5em 1em;
+    text-align: right;
+}
+
+.message-box{
+    resize: none;
 }
 
 .search button,
