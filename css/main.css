@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -26,7 +27,7 @@ header{
 #user-logo{
     border: 2px solid #c4bbaf;
     border-radius: 50%;
-    margin: 0 2em;
+    margin: 0 1em;
 }
 
 /* #side-menu{
@@ -47,6 +48,10 @@ header{
     border-radius: 5px;
 }
 
+.char-left{
+    margin-right: .5em;
+    color: #777;
+}
 .message-box{
    border-radius: 5px;
    font-size: 1em;
@@ -69,9 +74,11 @@ footer{
 .wrapper{
     height: calc(100vh - 50px);
 }
+
+main,
 .container,
-main{
-    width: 90%;
+#register{
+    width: 80%;
     margin: 0 auto;
     padding: 1em;
 }
@@ -95,14 +102,21 @@ main{
     text-align: center;
 }
 
+.user-messages{
+    margin: 0 2.5em;
+}
 .user-messages form{
     margin: 0 1em;
     padding: .5em 1em;
     text-align: right;
 }
 
+#register{
+    width: 90%;
+}
+
 .message-box{
-    resize: none;
+    resize: none;    
 }
 
 .search button,
@@ -111,14 +125,8 @@ main{
     margin: 0 1em;
 }
 
-.message-card{
-    width: 90%;
-    margin: 0 auto;
-    padding: 1em 0;
-}
-
-.message-card li{
-    margin: .5em 0;
+#message-card li{
+    margin: 1.5em 0;
     padding: .5em 0;
 }
 
@@ -156,7 +164,7 @@ main{
     flex: 2 50%;
 }
 
-.user-messages form{
+#regiter{
     flex: 1;
 }
 

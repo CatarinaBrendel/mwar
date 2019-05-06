@@ -1,6 +1,21 @@
 const form = document.getElementById('register');
 const input = form.querySelector('textarea');
 
+function messageWordCounter (){
+    let msg = document.getElementsByClassName('message-box')[0];
+    let charCounter = document.getElementsByClassName('char-left')[0];
+    let charLeft;
+    let maxChar = 250;
+
+    charCounter.textContent = maxChar;
+
+    msg.addEventListener('keydown', () => {
+        setTimeout(function (){ 
+            charCounter.textContent = maxChar - msg.value.length;
+        }, 1);
+    })
+}
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const text = input.value;
@@ -11,28 +26,6 @@ form.addEventListener('submit', (e) => {
     ul.appendChild(li);
 });
 
+messageWordCounter();
 
-
-
-
-
-
-
-
-
-// function messageCharacterCounter (){
-//     let msg = document.getElementsByClassName('message-box');
-//     let charLeftLabel = 'char-left';
-//     let charLeft = document.getElementById('char-left');
-//     let maxChar = 250;
-//     let maxCharWarn = 20;
-
-//     charLeftLabel.textContent = maxChar;
-    
-//     msg.addEventListener('keydown', () => {
-//         console.log(msg.value.length);
-//     });
-// }
-
-// messageCharacterCounter();
 
