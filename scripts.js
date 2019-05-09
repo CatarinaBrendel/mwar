@@ -1,10 +1,10 @@
 const form = document.getElementById('register');
 const input = form.querySelector('textarea');
+let charCounter = document.getElementsByClassName('char-left')[0];
 let postCounter = 0;
 
 function messageWordCounter (){
     let msg = document.getElementsByClassName('message-box')[0];
-    let charCounter = document.getElementsByClassName('char-left')[0];
     let charLeft;
     let maxChar = 250;
 
@@ -41,5 +41,4 @@ form.addEventListener('submit', (e) => {
 });
 
 messageWordCounter();
-
 
