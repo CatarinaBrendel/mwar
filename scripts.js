@@ -17,6 +17,7 @@ function messageWordCounter (){
     })
 }
 
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const text = input.value;
@@ -38,8 +39,6 @@ form.addEventListener('submit', (e) => {
         postCounting.textContent = postCounter + ' Posts';
     }
 });
-
-
 
 messageWordCounter();
 
