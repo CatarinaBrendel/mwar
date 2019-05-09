@@ -1,0 +1,198 @@
+/* ------ Basic Style ------ */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #f0f0f0;
+    max-width: 1440px;
+}
+
+textarea:focus,
+input:focus,
+button:focus{
+    outline: none;
+}
+
+header{
+    background-color: #fff;
+}
+
+.search button,
+.user-messages button{
+    background-color: #8d5b4c;
+    color: #f0f0f0;
+    padding: 0 1em;
+    border-radius: 5px;
+}
+
+#user-logo{
+    display: relative;
+    border: 2px solid #c4bbaf;
+    border-radius: 50%;
+    margin: 0 1em;
+}
+/* 
+.side-menu{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    list-style-type: none;
+    background-color: #5a2a27;
+    width: 200px;
+    padding: 1em 3em;
+}
+
+.side-menu a{
+    text-decoration: none;
+    color: #fff;
+} */
+
+.user-tag{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.char-left{
+    color: #777;
+}
+.message-box{
+   border-radius: 5px;
+   font-size: 1em;
+   border: 1px solid #fff;
+}
+
+#message-card li{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+#message-card p{
+    margin: 0;
+    padding-top: .5em;;
+    text-align: right;
+    font-size: .7em;
+    color: #999;
+}
+
+footer{
+    background-color: #fff;
+}
+
+
+/* ----- Basic Layout -----*/
+
+.wrapper{
+    height: calc(100vh - 50px);
+}
+
+main,
+.container{
+    width: 75%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.search input,
+.search button{
+    margin: 0 .5em;
+    padding: .5em;
+    font-size: 1em;
+}
+
+.search input{
+    width: 60%;
+    border: 2px solid #8d5b4c;
+    border-radius: 10px;
+}
+
+.user-tag{
+    width: 200px;
+    height: 200px;
+    margin: 1.5em 0;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0 5px 2px rgba(153, 153, 153, 0.646);
+}
+
+.user-messages{
+    margin: 0 2.5em;
+}
+.user-messages form{
+    margin: 0 1em;
+    padding: .5em 1em;
+    text-align: right;
+}
+
+.message-box{
+    resize: none;
+    width: 100%;
+    padding: .5em;    
+}
+
+.search button,
+.user-messages button{
+    width: 80px;
+    padding: .5em;
+    margin: 0;
+}
+
+#message-card li{
+    margin: 1.5em 0;
+    padding: .8em .8em 0;
+}
+
+.main-foot{
+    text-align: center;
+    height: 50px;
+    padding: 1em;
+}
+
+
+
+/* ------ Flexbox Styles ------ */
+
+.container{
+    display: flex;
+    align-content: space-between;
+}
+
+.logo{
+    flex: 1;
+}
+
+.search{
+    align-self: center;
+    margin: 0 1em;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-messages{
+    flex-direction: column;
+    flex: 2 50%;
+}
+
+#regiter{
+    flex-direction: column;
+    flex: 0 100%;
+}
+
+/* ------ Media Query ------ */
+
+@media (max-width: 900px){
+
+}
+
+
+
+

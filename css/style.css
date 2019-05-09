@@ -1,0 +1,213 @@
+/* =====================================
+    Basic Style
+======================================== */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #f0f0f0;
+    color: #222;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+main{
+    background: linear-gradient(#a56e5dd3, transparent 95%),
+                #a56e5dd3 url('../img/forest.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.btn{
+    background-color: #8d5b4c;
+    color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.btn a,
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #a56e5dd3;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #8d5b4c;
+}
+
+header{
+    background-color :#fff;
+}
+
+.signup{
+    border: 2px solid #c4bbaf;
+    border-radius: 10px;
+    background-color: #c4bbaf;
+}
+
+.main-foot{
+    font-size: 0.8em;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* -------- Basic Layout --------*/
+.wrapper{
+    width: 100%;
+}
+
+nav{
+    margin: 0 auto;
+    padding: .5em 0;
+    width: 70%;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 130px);
+    margin: 0 auto;
+    padding: 10% 0;
+}
+
+form{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login{
+    padding: 0.5em 0;
+}
+
+.login input,
+.login button{
+    margin: 0 1em;
+    padding: 0 2.5em;
+}
+
+.login button{
+    width: 100px;
+}
+
+.signup input,
+.signup button{
+    margin: 1em;
+    padding: .5em;
+}
+
+.main-foot{
+    width: 100%;
+    height: 50px;
+    padding: 1em 0;
+}
+
+/* -------- Flexboxes --------*/
+.nav-container,
+.login{
+    display: flex;
+    align-content: space-between;
+}
+
+.signup{
+   display: flex;
+   flex-direction: column;
+}
+
+/* -------- Media Queries --------*/
+@media (min-width: 601px) and (max-width: 900px) {
+    
+    nav{
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    main{
+        padding: 20% 0;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 600px) {
+    
+    nav{
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0;
+        width: 95%;
+    }
+
+    .logo{
+       margin: auto;
+        text-align: left;
+    }
+
+    .login{
+        align-self: center;
+        width: 80%;
+    }
+
+    .login input,
+    .login button{
+        margin: 0 .3em;
+        padding: 1em .3em;
+    }
+
+    main{
+        height: calc(100vh - 10px);
+        padding: 5% 0;
+    }
+
+    form{
+        margin: 1.5em auto;
+    }
+
+    .signup input,
+    .signup button{
+    margin: .6em;
+    padding: .5em 0;
+    } 
+
+}
+
+
+@media (max-width: 400px){
+    .nav-container,
+    .login{
+        flex-direction: column;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .login{
+        align-self: center;
+        width: 80%;
+    }
+
+    .signup{
+        margin: 1em auto;
+        width: 70%;
+    }
+
+    .login input,
+    .login button{
+        margin: .3em 0;
+        padding: .3em .5em;
+    }
+
+    .login button{
+        width: 100%;
+    }
+
+    .signup input,
+    .signup button{
+        margin: 1em;
+        padding: .5em .9em;
+    }
+}

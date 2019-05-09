@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mwar</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="container">
+                <div class="logo">
+                    <img  src="img/bear.svg" width="50px" height="50px">
+                </div>
+                <div class="search">
+                    <form method="POST">
+                        <input type="search">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div>
+                    <img id="user-logo" src="img/spiderman.svg" width="50px" height="50px">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="main-container">
+                <aside class="user-tag">
+                    <img id="user-id" src="img/spiderman.svg" width="90px" height="90px">
+                    <p>Following</p>
+                    <p>Followers</p>
+                    <p id="post-counter">Posts</p>
+                </aside>
+                <div class="user-messages">
+                    <form id="register" method="POST">
+                        <p class="char-left"></p>
+                        <textarea class="message-box"></textarea>
+                        <button id="submit-input"type="submit">Submit</button>
+                    </form>
+                    <h3>What you've been saying...</h3>
+                    <ul id="message-card">
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="main-foot">
+        <p>&copy2019 Mwar Social Media</p>
+    </footer>
+     <div class="side-menu">
+        <div id="side-menu-content">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Lists</a></li>
+            <li><a href="#">Bookmarks</a></li>
+            <li><a href="#">Settings</a></li>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

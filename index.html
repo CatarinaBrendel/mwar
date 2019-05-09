@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet"  href="css/style.css">
     <title>Welcome</title>
 </head>
 <body>
-    <nav>
-        <img id="logo" src="img/bear.svg">
-        <form class="login-menu">
-            <input type="email" placeholder="email@email.com" required>
-            <input type="password" placeholder="password" minlength="8" required>
-            <button type="submit">Log Me In</button>
-        </form>
-    </nav>
-    <main>
-        <form class="signup">
-            <input type="text" placeholder="Name" required>
-            <input type="text" placeholder="Surname" required>
-            <input type="email" placeholder="email@email.com" required>
-            <input type="password" placeholder="password" minlength="8" required>
-            <button type="submit">Sign Me In</button>
-        </form>
-    </main>
-
+    <div class="wrapper">
+        <header>
+            <nav class="nav-container">
+                <div class="logo">
+                    <img  src="img/bear.svg" width="50px" height="50px">
+                </div>
+                <form class="login" method="GET">
+                    <input class="field" type="email" placeholder="email@email.com" required>
+                    <input class="field" type="password" placeholder="password" minlength="8" required>
+                    <button class="btn" type="submit"><a href="main.html">Log In</a></button>
+                </form>
+            </nav>
+        </header>
+        <main>
+            <form class="signup" method="GET">
+                <input class="field" type="text" placeholder="Name" required>
+                <input class="field" type="text" placeholder="Surname" required>
+                <input tclass="field" ype="email" placeholder="email@email.com" required>
+                <input class="field" type="password" placeholder="password" minlength="8" required>
+                <button  class="btn" type="submit"><a href="main.html">Sign Me In</a></button>
+            </form>
+        </main>
+    </div>
     <footer class="main-foot">
         <p>&copy2019 Mwar Social Media</p>
     </footer>
-    
+
 </body>
 </html>
