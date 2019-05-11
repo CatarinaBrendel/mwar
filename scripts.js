@@ -5,7 +5,6 @@ let postCounter = 0;
 
 function messageWordCounter (){
     let msg = document.getElementsByClassName('message-box')[0];
-    let charLeft;
     let maxChar = 250;
 
     charCounter.textContent = maxChar;
@@ -16,7 +15,6 @@ function messageWordCounter (){
         }, 1);
     })
 }
-
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -42,3 +40,14 @@ form.addEventListener('submit', (e) => {
 
 messageWordCounter();
 
+const userLogo = document.getElementById('user-logo');
+
+userLogo.addEventListener('click', () => {
+    const sideMenu = document.getElementsByClassName('side-menu')[0];
+    if (sideMenu.style.display === 'none'){
+        sideMenu.style.display = 'block';
+    } else{
+        sideMenu.style.display = 'none';
+    }
+    
+});

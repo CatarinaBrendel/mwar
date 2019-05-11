@@ -30,27 +30,28 @@ header{
     border-radius: 5px;
 }
 
-#user-logo{
+#user-logo img{
     display: relative;
     border: 2px solid #c4bbaf;
     border-radius: 50%;
     margin: 0 1em;
 }
-/* 
+
 .side-menu{
     display: none;
     position: absolute;
     z-index: 1;
     list-style-type: none;
     background-color: #5a2a27;
-    width: 200px;
-    padding: 1em 3em;
+    width: 150px;
+    height: 400px;
+    padding: 1em;
 }
 
 .side-menu a{
     text-decoration: none;
     color: #fff;
-} */
+}
 
 .user-tag{
     background-color: #fff;
