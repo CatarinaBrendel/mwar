@@ -51,3 +51,20 @@ userLogo.addEventListener('click', () => {
     }
     
 });
+
+const post = new XMLHttpRequest();
+post.onreadystatechange = function () {
+    if(post.readyState === 4 && post.status === 200) {
+        let message = JSON.parse(post.responseText);
+        let statusHTML = '<ul id="message-card">';
+        for (let i = 0; i < message.length; i += 1) {
+           statusHTML += '<li>' + message[i].message + '</li>';
+        } //end of for loop
+    statusHTML += '</ul>';
+    document.getElementById('message-container').innerHTML = statusHTML;
+    console.log(statusHTML);
+    } //end of condition post
+} //end onreadystatechange
+
+post.open('GET', 'posts.json');
+post.send();

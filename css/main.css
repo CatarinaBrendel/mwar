@@ -89,9 +89,9 @@ footer{
 
 /* ----- Basic Layout -----*/
 
-.wrapper{
+/* .wrapper{
     height: calc(100vh - 50px);
-}
+} */
 
 main,
 .container{
