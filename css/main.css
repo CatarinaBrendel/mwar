@@ -89,10 +89,6 @@ footer{
 
 /* ----- Basic Layout -----*/
 
-/* .wrapper{
-    height: calc(100vh - 50px);
-} */
-
 main,
 .container{
     width: 75%;
@@ -151,10 +147,8 @@ main,
 
 .main-foot{
     text-align: center;
-    height: 50px;
     padding: 1em;
 }
-
 
 
 /* ------ Flexbox Styles ------ */
@@ -191,9 +185,61 @@ main,
 /* ------ Media Query ------ */
 
 @media (max-width: 900px){
+    
+    main,
+    .container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    }
 
+    .user-tag{
+    width: 100px;
+    height: 160px;
+    margin: 1.5em 0;
+    font-size: .8em;
+    }
+
+    .user-tag img{
+        width: 70px;
+    }
 }
 
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .logo{
+        margin: .5em auto;
+        padding: 0;
+    }
+
+    .search{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #user-logo{
+        display: none;
+    }
+
+    .main-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .user-tag{
+        display: row;
+        width: 100%;
+    }
+
+    .user-tag p,
+    .user-tag img{
+        display: inline-block;
+    }
+}
 
 
 

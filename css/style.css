@@ -60,6 +60,7 @@ header{
 /* -------- Basic Layout --------*/
 .wrapper{
     width: 100%;
+    height: 100%;;
 }
 
 nav{
@@ -103,7 +104,7 @@ main{
 .main-foot{
     width: 100%;
     height: 50px;
-    padding: 1em 0;
+    padding: .8em 0;
 }
 
 /* -------- Flexboxes --------*/
@@ -135,62 +136,21 @@ main{
     }
 }
 
-@media (min-width: 401px) and (max-width: 600px) {
-    
-    nav{
-        display: inline-block;
-        margin: 0 auto;
-        padding: 0;
-        width: 95%;
-    }
-
-    .logo{
-       margin: auto;
-        text-align: left;
-    }
-
-    .login{
-        align-self: center;
-        width: 80%;
-    }
-
-    .login input,
-    .login button{
-        margin: 0 .3em;
-        padding: 1em .3em;
-    }
-
-    main{
-        height: calc(100vh - 10px);
-        padding: 5% 0;
-    }
-
-    form{
-        margin: 1.5em auto;
-    }
-
-    .signup input,
-    .signup button{
-    margin: .6em;
-    padding: .5em 0;
-    } 
-
-}
-
-
 @media (max-width: 600px){
     .nav-container{
         flex-direction: column;
+        width: 60%;
     }
 
     .logo{
-        text-align: center;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .login{
         flex-direction: column;
-        align-self: center;
-        width: 80%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .signup{
@@ -200,12 +160,8 @@ main{
 
     .login input,
     .login button{
-        margin: 0 auto;
+        width: 90%;
         padding: .3em .5em;
-    }
-
-    .login button{
-        width: 100%;
     }
 
     .signup input,
