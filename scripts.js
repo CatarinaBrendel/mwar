@@ -14,6 +14,7 @@ function messageWordCounter (){
             charCounter.textContent = maxChar - msg.value.length;
         }, 1);
     })
+    return maxChar = 250;
 }
 
 form.addEventListener('submit', (e) => {
@@ -35,6 +36,7 @@ form.addEventListener('submit', (e) => {
         li.appendChild(dateLine);
         postCounter += 1;
         postCounting.textContent = postCounter + ' Posts';
+        messageWordCounter();
     }
 });
 

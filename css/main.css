@@ -40,17 +40,27 @@ header{
 .side-menu{
     display: none;
     position: absolute;
+    height: 100vh;
+    width: 20%;
     z-index: 1;
+    right: 15%;
     list-style-type: none;
-    background-color: #5a2a27;
-    width: 150px;
-    height: 400px;
+    background-color: rgba(90, 42, 39, .95);
     padding: 1em;
 }
 
 .side-menu a{
     text-decoration: none;
     color: #fff;
+}
+
+.side-menu a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.side-menu li{
+    padding: 40px;
+    text-align: center;
 }
 
 .user-tag{
@@ -193,6 +203,12 @@ main,
     padding: 1em;
     }
 
+    .side-menu{
+        right: 10%;
+        width: 35%;
+        height: 100vh;
+    }
+
     .user-tag{
     width: 100px;
     height: 160px;
@@ -207,37 +223,50 @@ main,
 
 @media (max-width: 600px){
     .container{
-        flex-direction: column;
-        width: 90%;
+        width: 95%;
+        padding: 0;
     }
 
-    .logo{
-        margin: .5em auto;
-        padding: 0;
+    .logo img{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
     }
 
     .search{
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    #user-logo{
         display: none;
     }
 
+    .side-menu{
+        width: 200px;
+        right: 0px;
+    }
+
     .main-container{
-        width: 95%;
+        display: inline-block;
+        width: 100%;
         margin: 0 auto;
     }
 
     .user-tag{
-        display: row;
+        display: inline-block;
         width: 100%;
+        margin: 0 auto;
+        height: 40px;
     }
 
-    .user-tag p,
     .user-tag img{
-        display: inline-block;
+        display: none;
+    }
+
+    .user-tag p{
+        display :inline-block;
+        padding: 0 20px;
+    }
+
+    .user-messages{
+        width: 100%;
+        margin: 20px auto;
     }
 }
 
