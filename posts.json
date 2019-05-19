@@ -1,0 +1,38 @@
+[
+    {
+        "number": "1",
+        "message": "This is only a test (1) to see how the AJAX and JSON works. I'm inside the JSON"
+    },
+    {
+        "number": "2",
+        "message": "This is only a test (2) to see how the AJAX and JSON works. I'm inside the JSON"
+    },
+    {
+        "number": "3",
+        "message": "This is only a test (3) to see how the AJAX and JSON works. I'm inside the JSON"
+    },
+    {
+        "number": "4",
+        "message": "This is only a test (4) to see how the AJAX and JSON works. I'm inside the JSON"
+    },
+    {
+        "number": "5",
+        "message": "This is only a test (5) to see how the AJAX and JSON works. I'm inside the JSON"
+    },
+    {
+        "number": "6",
+        "message": "This is only a test (6) to see how the AJAX and JSON works. I'm inside the JSON"
+    },
+    {
+        "number": "7",
+        "message": "This is only a test (7) to see how the AJAX and JSON works. I'm inside the JSON"
+    },
+    {
+        "number": "8",
+        "message": "This is only a test (8) to see how the AJAX and JSON works. I'm inside the JSON"
+    },
+    {
+        "number": "9",
+        "message": "This is only a test (9) to see how the AJAX and JSON works. I'm inside the JSON"
+    }
+]

@@ -10,34 +10,35 @@ body{
     background-color: #f0f0f0;
     color: #222;
     font-family: 'Roboto', 'sans-serif';
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6em;
+}
+
+main{
+    background: linear-gradient(#222, transparent 90%),
+                #a56e5dd3 url('../img/forest.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.btn{
+    background-color: #8d5b4c;
+    color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.btn a,
+.btn a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn:hover {
     background-color: #a56e5dd3;
-    color: #000;
 }
 
 input:focus{
     outline: none;
     border: 2px solid #8d5b4c;
-}
-
-main{
-    background-color: #f0f0f0;
-}
-
-.login button,
-.signup button{
-    background-color: #8d5b4c;
-    color: #f0f0f0;
-}
-
-.login button a,
-.signup button a{
-    text-decoration: none;
-    color: #fff;
 }
 
 header{
@@ -58,160 +59,109 @@ header{
 
 /* -------- Basic Layout --------*/
 .wrapper{
-    max-width: 1440px;
-    height: calc(100vh - 50px);
+    width: 100%;
+    height: 100%;;
 }
 
 nav{
     margin: 0 auto;
-    padding: 1em 2em;
+    padding: .5em 0;
     width: 80%;
 }
-.main-container{
-    margin: 2em;
+
+main{
+    width: 100%;
+    height: calc(100vh - 130px);
+    margin: 0 auto;
+    padding: 10% 0;
 }
 
-.background{
-    background-image: url('../img/Bear.jpg');
-    background-size: 130%;
-    background-position: center  top;
-    background-repeat: no-repeat;
-    border: 1px solid#f0f0f0;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px 5px #f0f0f0;
-    margin-right: .5em;
-}
-
-.nav-container p{
-    margin-right: 5em;
+.signup{
+    width: 300px;
+    margin: 0 auto;
 }
 
 .login{
-    padding: 0.5em 0;
+    padding: .5em 0;
 }
 
 .login input,
 .login button{
     margin: 0 1em;
-    padding: 0 2.5em;
+    padding: 1em .5em;
 }
 
 .login button{
-    width: 90px;
-}
-
-main{
-    width: 60%;
-    margin: 1em auto;
+    width: 100px;
 }
 
 .signup input,
 .signup button{
     margin: 1em;
-    padding: .5em 0;
+    padding: .5em;
 }
 
 .main-foot{
     width: 100%;
     height: 50px;
-    padding: 1em 0;
+    padding: .8em 0;
 }
 
 /* -------- Flexboxes --------*/
-.nav-container,
-.login{
+.nav-container{
     display: flex;
     align-content: space-between;
 }
 
 .logo{
-    flex: 1 50%;
-}
-
-.main-container,
-.signup{
-    display: flex;
-}
-
-.main-contaier{
-    flex-direction: row;
-}
-
-.background{
-    flex: 1 50%;
+    flex: 1;
 }
 
 .signup{
-    flex: 1 50%;
-    flex-direction: column;
-    width: 100%;
+   display: flex;
+   flex-direction: column;
 }
 
 /* -------- Media Queries --------*/
 @media (min-width: 601px) and (max-width: 900px) {
     
-    .login input,
-    .login button{
-        margin: 0 .5em;
-        padding: 0 .5em;
+    nav{
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
     }
-
-    main {
-        width: 85%;
-        margin: auto;
-
+    
+    main{
+        padding: 20% 0;
     }
-    .main-container{
-        margin: 1.5em 0em;
-        width: 100%;
-    }
-
-    .signup input,
-    .signup button{
-    margin: .6em;
-    padding: .5em 0;
 }
-
-}
-
 
 @media (max-width: 600px){
-    .nav-container,
-    .login,
-    .main-container{
+    .nav-container{
         flex-direction: column;
+        width: 60%;
     }
 
     .logo{
-        text-align: center;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .login{
-        align-self: center;
-        width: 80%;
-    }
-
-    .background{
-        display: none;
-    }
-    
-    .main-container{
-        margin: 1.5em 0;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .signup{
-        margin: 2em auto;
-        width: 80%;
+        margin: 1em auto;
+        width: 70%;
     }
 
     .login input,
     .login button{
-        margin: .3em 0;
+        width: 90%;
         padding: .3em .5em;
-    }
-
-    .login button{
-        width: 100%;
     }
 
     .signup input,
