@@ -44,6 +44,7 @@ header{
     width: 20%;
     z-index: 1;
     right: 15%;
+    top: 85px;
     list-style-type: none;
     background-color: rgba(90, 42, 39, .95);
     padding: 1em;
@@ -56,6 +57,11 @@ header{
 
 .side-menu a:hover{
     border-bottom: 2px solid #fff;
+}
+
+.side-menu a:visited{
+    color: #c4bbaf;
+    border-bottom: 2px solid #c4bbaf;
 }
 
 .side-menu li{
@@ -240,6 +246,7 @@ main,
     .side-menu{
         width: 200px;
         right: 0px;
+        top: 55px;
     }
 
     .main-container{
@@ -249,7 +256,8 @@ main,
     }
 
     .user-tag{
-        display: inline-block;
+        display: flex;
+        align-content: space-between;
         width: 100%;
         margin: 0 auto;
         height: 40px;
@@ -260,7 +268,7 @@ main,
     }
 
     .user-tag p{
-        display :inline-block;
+        margin: 0 auto;
         padding: 0 20px;
     }
 
